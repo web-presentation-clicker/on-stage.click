@@ -1,8 +1,6 @@
 body {
-    text-align: center;
     background-color: #c0c0c4;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
 }
 
 #hamburger-menu{
@@ -81,18 +79,31 @@ body {
 }
 
 .section {
-    height: 100vh;
     align-content: center;
+    min-height: 100vh;
+    padding: 100px;
+}
+
+.section .content {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 600px){
+    .section {
+        padding: 10%;
+    }
 }
 
 #home {
     background-color: rgb(119, 196, 225);
+    text-align: center;
 }
 
 #home h1{
     font-family: Inherit, sans-serif;
     letter-spacing: 1px;
-    padding-top: 30px;
 }
 
 #home p {
@@ -100,7 +111,6 @@ body {
     color: #333344;
     font-weight: 600;
     letter-spacing: 1px;
-    margin: 2em;
     line-height: 2em;
 }
 
@@ -108,24 +118,17 @@ body {
     background-color: rgb(101, 229, 144);
 }
 
-#instructions h2{
-    margin-top: 4em;
-}
-
-#instructions ol{
-    text-align: center;
+#instructions ol {
     margin: auto;
     display: inline-block;
     font-family: Californian FB, sans-serif;
     font-weight: 600;
-    justify-content: center;
 }
 
 #instructions li{
     font-family: Californian FB, sans-serif;
-    text-align: left;
-    padding-left: 2em;
-    margin: 2em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 ol li a{
@@ -138,22 +141,19 @@ ol li a{
     background-color: rgb(227, 195, 118);
     font-family: Californian FB, sans-serif;
     line-height: 2em;
-    padding-left: 20%;
-    padding-right: 20%;
 }
 
 #donate{
+    text-align: center;
     line-height: 2em;
 }
 
 .link-button {
+    display: block;
     text-align: center;
+    width: max-content;
     background-color: #202024;
-    width: 200px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 1.3em 1.5em;
     border-radius: 5%;
     margin: 2em auto;
     text-decoration: none;
