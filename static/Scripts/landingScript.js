@@ -7,7 +7,7 @@ function setDownloadLink(){
 
     // Verify browser in use & set the link
     if(userAgent.includes("Chrome")){
-        downloadButton.href = "https://chromewebstore.google.com/detail/web-presentation-clicker/";
+        downloadButton.href = "https://chromewebstore.google.com/detail/web-presentation-clicker/mnkkbdgkehfhenamhggdljdmlpdpjmom";
     } else if (userAgent.includes("Firefox")){
         downloadButton.href = "https://addons.mozilla.org/en-US/firefox/addon/web-presentation-clicker/";
     }else {
