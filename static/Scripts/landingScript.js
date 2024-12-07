@@ -1,6 +1,6 @@
 // Detect browser & set appropriate download link
 function setDownloadLink(){
-    let downloadButton = document.querySelector("#button-container a");
+    let downloadButton = document.getElementById("download-button");
 
     // Sets the user's agent
     let userAgent = navigator.userAgent;

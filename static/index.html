@@ -13,19 +13,16 @@
 
     <!--Navbar container-->
     <ul id="navbar-container">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#instructions">Instructions</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#donate">Donate</a></li>
+        <a href="#home"><li>Home</li></a>
+        <a href="#instructions"><li>Instructions</li></a>
+        <a href="#about"><li>About</li></a>
+        <a href="#donate"><li>Donate</li></a>
     </ul>
     <div id="home">
         <h1>Web Presentation Clicker</h1>
         <h3>No presentation clicker?...No problem!</h3>
         <p>A simple web app that allows you to remotely control<br>your slideshow presentation with your mobile device.</p>
-        <div id="button-container">
-            <!--Extension to be linked within href of "a" tag-->
-            <a href="#">Download Now</a>
-        </div>
+        <a id="download-button" class="link-button" href="#" target="_blank">Download Now</a>
     </div>
     <div id="instructions">
         <h2>Instructions:</h2>
@@ -47,9 +44,7 @@
         <h3>Donate</h3>
         <p>Our efforts and work are funded by your generous donations. Please consider donating to
         us today.</p>
-        <div id="donation-button">
-            <a href="donation.html">Donate Today</a>
-        </div>
+        <a href="donation.html" class="link-button"><div>Donate Today</div></a>
     </div>
 </body>
 </html>

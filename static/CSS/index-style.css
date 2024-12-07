@@ -33,8 +33,7 @@ body{
     justify-content: center;
 }
 
-#navbar-container li{
-    display: inline;
+#navbar-container li {
     padding: 10px 20px;
 }
 
@@ -42,7 +41,11 @@ body{
     background-color: #FF671D;
 }
 
-#navbar-container li a{
+#navbar-container > * {
+    display: inline;
+}
+
+#navbar-container a {
     text-decoration: none;
     color: #FFF;
 }
@@ -96,29 +99,6 @@ body{
     line-height: 2em;
 }
 
-#button-container{
-    text-align: center;
-    background-color: #202024;
-    width: 200px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5%;
-    margin: 2em auto;
-}
-
-#button-container:hover{
-    background-color: #FF671D;
-}
-
-#button-container a{
-    text-decoration: none;
-    color: #FFF;
-    font-size: 16px;
-    font-weight: bold;
-}
-
 #instructions{
     height: 100vh;
 }
@@ -162,7 +142,7 @@ ol li a{
     line-height: 2em;
 }
 
-#donation-button {
+.link-button {
     text-align: center;
     background-color: #202024;
     width: 200px;
@@ -172,15 +152,12 @@ ol li a{
     justify-content: center;
     border-radius: 5%;
     margin: 2em auto;
-}
-
-#donation-button:hover{
-    background-color: #FF671D;
-}
-
-#donation-button a{
     text-decoration: none;
     color: #FFF;
     font-size: 16px;
     font-weight: bold;
+}
+
+.link-button:hover {
+    background-color: #FF671D;
 }
