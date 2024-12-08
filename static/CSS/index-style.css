@@ -173,14 +173,21 @@ body {
     line-height: 2em;
 }
 
+.link-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    margin: 2em;
+}
+
 .link-button {
-    display: block;
     text-align: center;
     width: max-content;
     background-color: #202024;
+    margin: 0.4em;
     padding: 1.3em 1.5em;
     border-radius: 5%;
-    margin: 2em auto;
     text-decoration: none;
     color: #FFF;
     font-size: 16px;
