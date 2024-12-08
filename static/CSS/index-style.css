@@ -49,7 +49,7 @@ body {
 }
 
 /*hide the navbar on small screens initially*/
-@media (max-width: 400px){
+@media (max-width: 550px){
     #navbar-container {
         display: none;
         flex-direction: column;
@@ -92,7 +92,11 @@ body {
 
 @media (max-width: 600px){
     .section {
-        padding: 10%;
+        padding: 10vw;
+    }
+
+    .section {
+        min-height: calc(100vh - 20vw);
     }
 }
 
