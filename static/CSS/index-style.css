@@ -43,7 +43,7 @@ body {
 }
 
 /*hide the navbar on small screens initially*/
-@media (max-width: 550px){
+@media (max-width: 700px){
     #navbar-container {
         display: none;
         flex-direction: column;
