@@ -15,13 +15,13 @@
     <button id="hamburger-menu" onclick="toggleMenu()">&#9776;</button>
 
     <!--Navbar container-->
-    <ul id="navbar-container">
-        <a href="#home"><li>Home</li></a>
-        <a href="#instructions"><li>How to use</li></a>
-        <a href="#about"><li>About</li></a>
-        <a href="#donate"><li>Donate</li></a>
-        <a href="https://github.com/web-presentation-clicker" target="_blank"><li>Github</li></a>
-    </ul>
+    <div id="navbar-container">
+        <a href="#home">Home</a>
+        <a href="#instructions">How to use</a>
+        <a href="#about">About</a>
+        <a href="#donate">Donate</a>
+        <a href="https://github.com/web-presentation-clicker" target="_blank">Github</a>
+    </div>
     <div id="home" class="section">
         <div class="content">
             <h1>Web Presentation Clicker</h1>
@@ -37,29 +37,32 @@
         <div class="content">
             <h2>How to use</h2>
             Simply <b>add</b>, <b>click</b>, and <b>scan</b>:
-            <ol>
+            <div class="steps">
                 <div class="step">
-                    <li>
+                    <div class="details">
+                        <div class="number">1</div>
                         <p><b>Add</b> the extension to your browser</p>
-                    </li>
+                    </div>
                     <img class="chrome browser-fallback" src="/img/add-chrome.webp" alt="Add extension button in chrome web store">
                     <img class="firefox" src="/img/add-firefox.webp" alt="Add extension button in chrome web store">
                 </div>
                 <div class="step">
-                    <li>
+                    <div class="details">
+                        <div class="number">2</div>
                         <p>With your presentation open, <b>click</b> the icon in the top right of your browser<br>
                             <small><i>It may be hidden in the <b>extensions menu<sup>2</sup></b> by your browser</i></small></p>
-                    </li>
+                    </div>
                     <img class="chrome browser-fallback" src="/img/click-chrome.webp" alt="Extension icon in the right of the browser navigation bar. The extensions menu is marked with a 2.">
                     <img class="firefox" src="/img/click-firefox.webp" alt="Extension icon in the right of the browser navigation bar. The extensions menu is marked with a 2.">
                 </div>
                 <div class="step">
-                    <li>
+                    <div class="details">
+                        <div class="number">3</div>
                         <p><b>Scan</b> the QR code using the camera app on your phone</p>
-                    </li>
+                    </div>
                     <img src="/img/scan.webp" alt="A phone with the camera app open, scanning the extension's QR Code. A link pops up on the bottom.">
                 </div>
-            </ol>
+            </div>
             Now you're ready to start your presentation as normal, controlling it with your phone.
         </div>
     </div>

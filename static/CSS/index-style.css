@@ -31,21 +31,15 @@ body {
     justify-content: center;
 }
 
-#navbar-container li {
-    padding: 10px 20px;
-}
-
-#navbar-container li:hover {
+#navbar-container a:hover {
     background-color: #FF671D;
 }
 
-#navbar-container > * {
-    display: inline;
-}
-
 #navbar-container a {
+    display: inline;
     text-decoration: none;
     color: #FFF;
+    padding: 10px 20px;
 }
 
 /*hide the navbar on small screens initially*/
@@ -59,7 +53,7 @@ body {
         background-color: #000;
     }
 
-    #navbar-container li{
+    #navbar-container a {
         display: block;
         padding: 15px;
         text-align: center;
@@ -133,10 +127,8 @@ body {
     suffix: "";
 }
 
-#instructions ol {
+#instructions .steps {
     margin: auto;
-    list-style-position: inside;
-    list-style-type: numbers-no-dot;
     padding-left: 0;
 }
 
@@ -156,12 +148,15 @@ body {
     text-align: right;
 }
 
-#instructions .step li {
+#instructions .step > .details {
     flex: 1 1 30%;
+}
+
+#instructions .step > .details p {
     margin: 10px;
 }
 
-#instructions .step li::marker {
+#instructions .step .number {
     font-size: 1.9em;
     font-weight: 600;
 }
