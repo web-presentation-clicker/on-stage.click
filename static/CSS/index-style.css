@@ -116,25 +116,50 @@ body {
 
 #instructions {
     background-color: rgb(101, 229, 144);
+    font-family: Californian FB, sans-serif;
+}
+
+#instructions > .content {
+    max-width: 1100px;
+}
+
+@counter-style numbers-no-dot {
+    system: numeric;
+    symbols: '0' '1' '2' '3' '4' '5' '6' '7' '8' '9';
+    suffix: "";
 }
 
 #instructions ol {
     margin: auto;
-    display: inline-block;
-    font-family: Californian FB, sans-serif;
+    list-style-position: inside;
+    list-style-type: numbers-no-dot;
+    padding-left: 0;
+}
+
+#instructions .step {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 6em;
+    margin-bottom: 6em;
+}
+
+#instructions .step img {
+    max-width: 100%;
+}
+
+#instructions .step:nth-of-type(2n) {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+#instructions .step li {
+    flex: 1 1 30%;
+    margin: 10px;
+}
+
+#instructions .step li::marker {
+    font-size: 1.9em;
     font-weight: 600;
-}
-
-#instructions li{
-    font-family: Californian FB, sans-serif;
-    margin-top: 2em;
-    margin-bottom: 2em;
-}
-
-ol li a{
-    text-decoration: none;
-    color: #FFF;
-    font-weight: 800;
 }
 
 #about{
@@ -164,4 +189,16 @@ ol li a{
 
 .link-button:hover {
     background-color: #FF671D;
+}
+
+.chrome {
+    display: none;
+}
+
+.firefox {
+    display: none;
+}
+
+.browser-fallback {
+    display: none;
 }
